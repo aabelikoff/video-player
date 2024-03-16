@@ -1,0 +1,119 @@
+/* dark green-gray #283618, light gray-green #B7B7A4, soft gray #D4D4D4, off-white #F0EFEB */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1b1b1b;
+}
+i {
+  pointer-events: none;
+}
+.container {
+  max-width: 800px;
+  margin: auto;
+}
+.media-player {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 6px solid #b7b7a4;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 20px auto;
+}
+.media-player:fullscreen {
+  width: 100% !important;
+}
+.media-player header,
+.media-player footer {
+  background-color: #b7b7a4;
+  display: flex;
+  padding: 8px 4px;
+}
+.media-player header {
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  color: #283618;
+  font-weight: 700;
+  font-size: 1.3em;
+  padding: 4px;
+}
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.form label {
+  font-weight: 600;
+  margin-right: 8px;
+}
+input[type="file"] {
+  padding: 8px;
+  background-color: #b7b7a4;
+  border: none;
+  font-size: 0.8em;
+}
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.controls-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.controls button {
+  cursor: pointer;
+  background: rgba(240, 239, 235, 0.5);
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  border: none;
+  margin: 4px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.controls .fullsize {
+  position: absolute;
+  top: -52px;
+  left: 4px;
+}
+.range-container {
+  width: 100%;
+  margin: 0 8px;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 8px;
+  background-color: #f0efeb;
+  outline: none;
+  border-radius: 3px;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  background-color: #283618;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.videoFrame {
+  width: 100%;
+  max-height: 400px;
+}
+.video-timer {
+  width: 30%;
+  font-size: 0.8em;
+  text-align: right;
+}
